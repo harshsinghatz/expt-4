@@ -15,7 +15,7 @@ form.addEventListener("submit", function (event) {
   if (!(validateUsername(username.value) && validatePassword(password.value))) {
     event.preventDefault();
     if (!validateUsername(username.value)) {
-      alert("Username rules: Less than 10 characters");
+      alert("Username rules: Less than 20 characters");
     }
     if (!validatePassword(password.value)) {
       alert(
@@ -48,7 +48,7 @@ form.addEventListener("submit", function (event) {
 });
 
 function validateUsername(username) {
-  return username.length <= 10;
+  return username.length <= 20;
 }
 
 function validatePassword(password) {
